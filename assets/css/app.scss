@@ -1,41 +1,51 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,500,700');
+@import "base.css";
+@import "../fonts/fontface.css";
 
-$background: #222;
-$text-color: #fff;
-$accent-color: yellow;
-$typography: 'Work Sans';
+$font-reg: 'lilgroteskregular';
+$font-bold: 'lilgroteskbold';
+
+// COLORS
+$dark: #27262d;
+$light: #ffffff;
+$accent-color: #f44336;
 
 body {
-  background-color: $background;
-  color: $text-color;
-
-  font-family: $typography, sans-serif;
-  max-width: 780px;
+  background-color: $dark;
+  color: $light;
+  font-family: $font-reg;
+  max-width: 1028px;
   margin: 80px auto 80px auto;
-  font-weight: 300;
-  line-height: 1.5;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 0.1px;
+  line-height: 1.4;
+}
+
+h1,h2,h3 {
+  font-family: $font-reg;
 }
 
 h1 {
-  font-size: 80px;
-  font-weight: 700;
+  font-size: 48px;
 }
 h2 {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 32px;
 }
 h3 {
   font-size: 24px;
-  font-weight: 700;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .logo {
+    width: 48px;
+  }
 
   a {
     margin-left: 10px;
@@ -47,21 +57,26 @@ section {
 }
 nav a {
   text-decoration: none;
-  color: $text-color;
+  color: $light;
+  font-family: $font-bold;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 nav a.selected, p a {
-  color: $text-color;
+  color: $light;
   text-decoration: none;
   border-bottom: 2px solid $accent-color;
 
   &:hover {
-    border-bottom: 2px solid $text-color;
+    border-bottom: 2px solid $light;
   }
 }
 
 p.read-more {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 div.blog-posts {
@@ -69,7 +84,8 @@ div.blog-posts {
 
   a {
     text-decoration: none;
-    color: $text-color;
+    font-family: $font-bold;
+    color: $light;
     display: block;
     margin: 0 0 40px 0;
   }
