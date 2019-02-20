@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "base.css";
+@import 'base.css';
 @import "../fonts/fontface.css";
 
 $font-reg: 'lilgroteskregular';
@@ -16,12 +16,13 @@ body {
   background-color: $dark;
   color: $light;
   font-family: $font-reg;
-  max-width: 1028px;
-  margin: 80px auto 80px auto;
+
   font-weight: normal;
   font-size: 30px;
   letter-spacing: 0.1px;
   line-height: 1.4;
+  max-width: 1024px;
+  margin: 60px auto;
 }
 
 h1,h2,h3 {
