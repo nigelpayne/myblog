@@ -2,11 +2,17 @@
 title: Blog of Payne
 timezone: UTC
 collections:
+  play:
+    title: Play
+    output: true
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
+    output: true
+  work:
+    title: Work
     output: true
 defaults:
 - scope:

@@ -1,16 +1,14 @@
 ---
 title: Work
 permalink: "/work/"
-Field name: 
 layout: default
 ---
 
 <div class="blog-posts">
-  {% for post in site.posts%}
-    <a href="{{ post.url }}">
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.excerpt }}</p>
-      <p class="read-more">Read more</p>
+  {% for work in site.work %}
+    <a href="{{ work.url }}">
+      <h2>{{ work.title }}</h2>
+      <p>{{ work.tags }}</p>
     </a>
   {% endfor %}
 </div>
