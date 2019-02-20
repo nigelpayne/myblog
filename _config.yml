@@ -2,6 +2,9 @@
 title: Blog of Payne
 timezone: UTC
 collections:
+  Play:
+    title: Play
+    output: true
   posts:
     title: Posts
     output: true
@@ -10,9 +13,6 @@ collections:
     output: true
   work:
     title: Work
-    output: true
-  Play:
-    title: Play
     output: true
 defaults:
 - scope:
@@ -27,8 +27,8 @@ defaults:
     layout: post
 email: noproblemnigel@gmail.com
 description: A blog about design
-baseurl:
-url:
+baseurl: 
+url: 
 twitter_username: tweetsofpayne
 github_username: nigelpayne
 markdown: kramdown
