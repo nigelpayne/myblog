@@ -45,8 +45,12 @@ header {
 section {
   margin: 40px 0 0 0;
 }
+nav a {
+  text-decoration: none;
+  color: $text-color;
+}
 
-nav a, p a {
+nav a.selected, p a {
   color: $text-color;
   text-decoration: none;
   border-bottom: 2px solid $accent-color;
@@ -69,6 +73,10 @@ div.blog-posts {
     display: block;
     margin: 0 0 40px 0;
   }
+}
+
+img {
+  max-width: 780px;
 }
 
 div.circle {
