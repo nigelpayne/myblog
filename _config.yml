@@ -2,7 +2,7 @@
 title: Blog of Payne
 timezone: UTC
 collections:
-  Play:
+  play:
     title: Play
     output: true
   posts:
