@@ -1,0 +1,15 @@
+---
+title: Play
+permalink: "/play/"
+layout: default
+---
+
+<h1>Here is a selection of experiments made for fun.</h1>
+
+<div class="play-posts">
+  {% for play in site.play %}
+    <a href="{{ work.url }}">
+      <h2>{{ play.title }}</h2>
+    </a>
+  {% endfor %}
+</div>

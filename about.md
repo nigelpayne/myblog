@@ -1,7 +1,7 @@
 ---
 title: About
 permalink: "/about/"
-Field name: 
+Field name:
 layout: default
 ---
 
