@@ -37,8 +37,8 @@ defaults:
     layout: post
 email: noproblemnigel@gmail.com
 description: A blog about design
-baseurl:
-url:
+baseurl: 
+url: 
 twitter_username: tweetsofpayne
 github_username: nigelpayne
 markdown: kramdown

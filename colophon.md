@@ -1,7 +1,7 @@
 ---
 title: Colophon
 permalink: "/colophon/"
-Field name:
+Field name: 
 layout: default
 ---
 
