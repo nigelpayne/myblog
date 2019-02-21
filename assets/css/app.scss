@@ -16,7 +16,6 @@ body {
   background-color: $dark;
   color: $light;
   font-family: $font-reg;
-
   font-weight: normal;
   font-size: 30px;
   letter-spacing: 0.1px;
@@ -86,6 +85,7 @@ div.blog-posts {
   a {
     text-decoration: none;
     font-family: $font-bold;
+    font-weight: bold;
     color: $light;
     display: block;
     margin: 0 0 40px 0;
