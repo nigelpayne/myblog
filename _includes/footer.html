@@ -1,13 +1,21 @@
 <footer>
 
-  {% include social.html %}
+  <div class="msg-me">
+    <h3>msg me</h3>
+    <a href="mailto:hey@nige.design?subject=I used the email address link on your website" class="yo-you">hey@nige.design</a>
 
-    <div class="copyright">
-      &copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> - end of time. <a href="/">Nigel Payne.</a>
-    </div>
+    <p>
+      &copy;
+      <script>
+        new Date().getFullYear() > 2010 && document.write(new Date().getFullYear());
+      </script>
+      - end of time.
+      <a href="/colophon/">Coded with <b>❤</b> by me.</a>
+    </p>
+  </div>
 
-    <div class="colophon">
-      <a href="/colophon/">Made with <b>❤</b></a>
-    </div>
+  <div class="social-media">
+    {% include social.html %}
+  </div>
 
 </footer>
