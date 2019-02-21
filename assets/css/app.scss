@@ -1,21 +1,36 @@
 ---
+
 ---
 
-@import 'base.css';
-@import "../fonts/fontface.css";
+@charset "utf-8";
 
-$font-reg: 'lilgroteskregular';
-$font-bold: 'lilgroteskbold';
+// abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
-// COLORS
-$dark: #27262d;
-$light: #ffffff;
-$accent-color: #f44336;
+// base
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/base';
+
+// components
+@import 'components/buttons';
+
+// layout
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/footer';
+
+// pages
+@import 'pages/home';
+@import 'pages/about';
 
 body {
-  background-color: $dark;
-  color: $light;
-  font-family: $font-reg;
+  background-color: $darkest-color;
+  color: $lightest-color;
+  font-family: $base-font-family;
   font-weight: normal;
   font-size: 30px;
   letter-spacing: 0.1px;
@@ -25,7 +40,7 @@ body {
 }
 
 h1,h2,h3 {
-  font-family: $font-reg;
+  font-family: $base-font-family;
 }
 
 h1 {
@@ -57,8 +72,8 @@ section {
 }
 nav a {
   text-decoration: none;
-  color: $light;
-  font-family: $font-bold;
+  color: $lightest-color;
+  font-family: $bold-font-family;
   font-weight: bold;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -66,12 +81,12 @@ nav a {
 }
 
 nav a.selected, p a {
-  color: $light;
+  color: $lightest-color;
   text-decoration: none;
   border-bottom: 2px solid $accent-color;
 
   &:hover {
-    border-bottom: 2px solid $light;
+    border-bottom: 2px solid $lightest-color;
   }
 }
 
@@ -84,9 +99,9 @@ div.blog-posts {
 
   a {
     text-decoration: none;
-    font-family: $font-bold;
+    font-family: $bold-font-family;
     font-weight: bold;
-    color: $light;
+    color: $lightest-color;
     display: block;
     margin: 0 0 40px 0;
   }

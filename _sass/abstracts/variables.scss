@@ -1,0 +1,46 @@
+// Typography
+//
+$base-font-family: 'lilgroteskregular', sans-serif;
+$bold-font-family: 'lilgroteskbold', sans-serif;
+$fonts-path: '../../fonts/';
+
+// Font weight
+//
+$font-weight-normal: 500;
+$font-weight-bold: 700;
+
+// Font Sizes
+//
+$base-font-size: 1rem;
+
+// Line height
+//
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+//
+$base-border-radius: 3px;
+$base-spacing: 2em;
+$small-spacing: $base-spacing / 2;
+$large-spacing: $base-spacing * 2;
+$base-z-index: 0;
+
+// Colors
+//
+$accent-color: #f44336;
+$lightest-color: #ffffff;
+$darkest-color: #27262d;
+$dark-color: lighten($darkest-color, 20%);
+$light-color: lighten($dark-color, 50%);
+
+// Background Colors
+//
+$base-background-color: $darkest-color;
+$secondary-background-color: $lightest-color;
+
+// Animations
+//
+$animation-duration: .5s;
+$base-duration: 150ms;
+$base-timing: ease;
